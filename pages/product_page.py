@@ -14,6 +14,7 @@ class ProductPage(BasePage):
 
 
     def verificar_imagem_existe(self):
+        self.esperar_elemento_aparecer(self.imagem_produto)
         self.verificar_se_elemento_existe(self.imagem_produto)
 
     def verificar_botao_back_existe(self):
